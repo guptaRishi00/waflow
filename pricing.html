@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masco - Saas Software Startup Tailwind Template</title>
+    <meta name="description" content="AIMass Tailwind based SASS Template" />
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/favicon.png" />
+
+    <!-- Icon Font -->
+    <link rel="stylesheet" href="assets/fonts/iconfonts/font-awesome/stylesheet.css" />
+    <!-- Site font -->
+    <link rel="stylesheet" href="assets/fonts/webfonts/inter/stylesheet.css" />
+    <link rel="stylesheet" href="assets/fonts/webfonts/plus-jakarta-sans/stylesheet.css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Development css -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+</head>
+
+<body>
+    <div class="page-wrapper relative z-[1] bg-white">
+        <!--...::: Header Start :::... -->
+         <header class="site-header site-header--absolute is--white py-3" id="sticky-menu">
+            <div class="container-default">
+                <div class="flex items-center justify-between gap-x-8">
+                    <!-- Header Logo -->
+                    <a href="index.html" class="">
+                        <img src="assets/img/waflow.png" alt="Masco" width="150" height="24" />
+                    </a>
+                    <!-- Header Logo -->
+
+                    <!-- Header Navigation -->
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="site-menu-main">
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger">Home 
+                                    </a>
+                                   
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link-item">About</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger">Services
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-2">
+                                        <li class="sub-menu--item">
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="service-details.html">Service Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger">Pages <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-3">
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">blogs <i class="fa-solid fa-angle-right"></i></a>
+                                            <ul class="sub-menu shape-none" id="submenu-4">
+                                                <li class="sub-menu--item">
+                                                    <a href="blog.html">blogs</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="blog-details.html">blog details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                      
+                                        
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Pricing
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-8">
+                                                <li class="sub-menu--item">
+                                                    <a href="pricing.html">Pricing-1</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="pricing-2.html">Pricing-2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger">Contact
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-11">
+                                        <li class="sub-menu--item">
+                                            <a href="contact.html">Contact-1</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Header Navigation -->
+
+                    <!-- Header User Event -->
+                    <div class="flex items-center gap-6">
+                        <a href="login.html" class="btn-text hidden hover:text-ColorPurple sm:inline-block">Login</a>
+                        <a href="signup.html" class="btn is-lunar-green is-rounded btn-animation group hidden sm:inline-block"><span>Sign up free</span></a>
+                        <!-- Responsive Offcanvas Menu Button -->
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Header User Event -->
+                </div>
+            </div>
+        </header>
+        <!--...::: Header End :::... -->
+
+        <main class="main-wrapper relative overflow-hidden">
+            <!--...::: Breadcrumb Section Start :::... -->
+            <section class="section-breadcrumb">
+                <!-- Breadcrumb Section Spacer -->
+                <div class="breadcrumb-wrapper">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <div class="breadcrumb-block">
+                            <h1 class="breadcrumb-title">Pricing</h1>
+                            <ul class="breadcrumb-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Pricing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+
+                    <!-- Breadcrumb Shape - 1 -->
+                    <div class="absolute left-0 top-0 -z-10">
+                        <img src="assets/img/elements/breadcrumb-shape-1.svg" alt="hero-shape-1" width="291" height="380" />
+                    </div>
+
+                    <!-- Breadcrumb Shape - 2 -->
+                    <div class="absolute bottom-0 right-0 -z-[1]">
+                        <img src="assets/img/elements/breadcrumb-shape-2.svg" alt="hero-shape-2" width="291" height="380" />
+                    </div>
+                </div>
+                <!-- Breadcrumb Section Spacer -->
+            </section>
+            <!--...::: Breadcrumb Section End :::... -->
+
+            <!--...::: Pricing Section Start :::... -->
+            <section class="section-pricing">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container-default">
+                        <!-- Section Content Wrapper -->
+                        <div class="jos">
+                            <!-- Section Content Block -->
+                            <div class="mx-auto max-w-[600px]">
+                                <div class="mb-5">
+                                    <h2 class="text-center">
+                                        Choice the right pricing plan that suits your need
+                                    </h2>
+                                </div>
+                            </div>
+                            <!-- Section Content Block -->
+                        </div>
+                        <!-- Section Content Wrapper -->
+
+                        <!-- Pricing Area -->
+                        <div>
+                            <!-- Pricing Button Block -->
+                            <div class="my-[50px] flex flex-row items-center justify-center gap-6">
+                                <span class="font-bold">Per Month</span>
+
+                                <!-- Toggle Button -->
+                                <label for="toggle" class="flex cursor-pointer items-center">
+                                    <!-- toggle -->
+                                    <span class="relative h-[35px] w-[70px] rounded-[35px] bg-ColorBlue">
+                                        <!-- hidden input -->
+                                        <input id="toggle" type="checkbox" class="hidden" onclick="toggleSwitch()" />
+                                        <!-- dot -->
+                                        <span class="toggle_dot absolute h-[35px] w-[35px] rounded-full bg-white transition-all duration-300"></span>
+                                    </span>
+                                </label>
+                                <!-- Toggle Button -->
+                                <span class="font-bold">Per Year</span>
+                            </div>
+                            <!-- Pricing Button Block -->
+
+                            <!-- Pricing List -->
+                            <div class="grid gap-x-6 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+                                <!-- Pricing Item -->
+                                <div class="jos" data-jos_animation="flip-left" data-jos_delay="0">
+                                    <div class="hover-solid-shadow h-full">
+                                        <div class="rounded-[10px] border-2 border-ColorBlack bg-white p-7 xl:p-10 h-full">
+                                            <!-- Pricing Content Top -->
+                                            <div class="text-center">
+                                                <span class="text-xl font-bold text-ColorBlack">Free Plan</span>
+                                                <div class="month text-[28px] font-normal leading-[2.85] text-ColorBlack">
+                                                    $<span class="text-[48px] font-bold leading-[1.3] xl:text-[58px]">00</span>/month
+                                                </div>
+                                                <div class="annual hidden text-[28px] font-normal leading-[2.85] text-ColorBlack">
+                                                    $<span class="text-[48px] font-bold leading-[1.3] xl:text-[58px]">00</span>/yearly
+                                                </div>
+                                                <span class="text-sm text-ColorBlack/70">No credit card required</span>
+                                            </div>
+                                            <!-- Pricing Content Top -->
+                                            <!-- Horizontal Line Separator -->
+                                            <div class="my-10 h-px w-full bg-ColorBlack/10"></div>
+                                            <!-- Horizontal Line Separator -->
+                                            <!-- Pricing Data list -->
+                                            <ul class="flex flex-col gap-y-6 text-base font-semibold text-ColorBlack xl:px-[18px]">
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Unlimited chats & websites
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    60-day conversations history
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Basic widget customization
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Web, desktop & mobile apps
+                                                </li>
+                                                <li class="flex gap-x-3 text-ColorBlack/10">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Engage visitors via visitor list
+                                                </li>
+                                                <li class="flex gap-x-3 text-ColorBlack/10">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Engage with automatic messages
+                                                </li>
+                                            </ul>
+                                            <!-- Pricing Data list -->
+                                            <div class="mt-10 flex justify-center">
+                                                <button class="btn is-white is-rounded is-large group w-full border-2">
+                                                    Purchase now
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Pricing Item -->
+                                <!-- Pricing Item -->
+                                <div class="jos" data-jos_animation="flip-left" data-jos_delay="0">
+                                    <div class="hover-solid-shadow h-full">
+                                        <div class="rounded-[10px] border-2 border-ColorBlack bg-white p-7 xl:p-10 h-full">
+                                            <!-- Pricing Content Top -->
+                                            <div class="text-center">
+                                                <span class="text-xl font-bold text-ColorBlack">Popular Plan</span>
+                                                <div class="month text-[28px] font-normal leading-[2.85] text-ColorBlack">
+                                                    $<span class="text-[48px] font-bold leading-[1.3] xl:text-[58px]">199</span>/month
+                                                </div>
+                                                <div class="annual hidden text-[28px] font-normal leading-[2.85] text-ColorBlack">
+                                                    $<span class="text-[48px] font-bold leading-[1.3] xl:text-[58px]">2000</span>/yearly
+                                                </div>
+                                                <span class="text-sm text-ColorBlack/70">No credit card required</span>
+                                            </div>
+                                            <!-- Pricing Content Top -->
+                                            <!-- Horizontal Line Separator -->
+                                            <div class="my-10 h-px w-full bg-ColorBlack/10"></div>
+                                            <!-- Horizontal Line Separator -->
+                                            <!-- Pricing Data list -->
+                                            <ul class="flex flex-col gap-y-6 text-base font-semibold text-ColorBlack xl:px-[18px]">
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Live chat + email + FB Messenger
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    3-year conversations history
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Advanced widget customization
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    24/7 system monitoring facility
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Engage visitors via visitor list
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Engage with automatic messages
+                                                </li>
+                                            </ul>
+                                            <!-- Pricing Data list -->
+                                            <div class="mt-10 flex justify-center">
+                                                <button class="btn is-blue is-rounded is-large group w-full border-2">
+                                                    Purchase now
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Pricing Item -->
+                                <!-- Pricing Item -->
+                                <div class="jos" data-jos_animation="flip-left" data-jos_delay="0">
+                                    <div class="hover-solid-shadow h-full">
+                                        <div class="rounded-[10px] border-2 border-ColorBlack bg-white p-7 xl:p-10 h-full">
+                                            <!-- Pricing Content Top -->
+                                            <div class="text-center">
+                                                <span class="text-xl font-bold text-ColorBlack">Standard Plan</span>
+                                                <div class="month text-[28px] font-normal leading-[2.85] text-ColorBlack">
+                                                    $<span class="text-[48px] font-bold leading-[1.3] xl:text-[58px]">49</span>/month
+                                                </div>
+                                                <div class="annual hidden text-[28px] font-normal leading-[2.85] text-ColorBlack">
+                                                    $<span class="text-[48px] font-bold leading-[1.3] xl:text-[58px]">500</span>/yearly
+                                                </div>
+                                                <span class="text-sm text-ColorBlack/70">No credit card required</span>
+                                            </div>
+                                            <!-- Pricing Content Top -->
+                                            <!-- Horizontal Line Separator -->
+                                            <div class="my-10 h-px w-full bg-ColorBlack/10"></div>
+                                            <!-- Horizontal Line Separator -->
+                                            <!-- Pricing Data list -->
+                                            <ul class="flex flex-col gap-y-6 text-base font-semibold text-ColorBlack xl:px-[18px]">
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Live chat + email + FB Messenger
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    3-year conversations history
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Advanced widget customization
+                                                </li>
+                                                <li class="flex gap-x-3">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    24/7 system monitoring facility
+                                                </li>
+                                                <li class="flex gap-x-3 text-ColorBlack/10">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Engage visitors via visitor list
+                                                </li>
+                                                <li class="flex gap-x-3 text-ColorBlack/10">
+                                                    <span class="text-xl">
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </span>
+                                                    Engage with automatic messages
+                                                </li>
+                                            </ul>
+                                            <!-- Pricing Data list -->
+                                            <div class="mt-10 flex justify-center">
+                                                <button class="btn is-white is-rounded is-large group w-full border-2">
+                                                    Purchase now
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Pricing Item -->
+                            </div>
+                            <!-- Pricing List -->
+                        </div>
+                        <!-- Pricing Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!--...::: Pricing Section End :::... -->
+        </main>
+
+        <!--...::: Footer Section Start :::... -->
+        <footer class="section-footer">
+            <div class="bg-ColorBlue">
+                <!-- Footer Area Center -->
+                <div class="text-white">
+                    <!-- Footer Center Spacing -->
+                    <div class="py-[60px] lg:py-20 xl:py-[100px]">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <!-- Footer Widget List -->
+                            <div class="grid gap-x-16 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-24 xxl:gap-x-[134px]">
+                                <!-- Footer Widget Item -->
+                                <div class="flex flex-col gap-y-7">
+                                    <!-- Footer Widget Title -->
+                                    <div class="text-xl font-semibold capitalize">
+                                        Primary Pages
+                                    </div>
+                                    <!-- Footer Navbar -->
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li>
+                                            <a href="index.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget Item -->
+
+                                <!-- Footer Widget Item -->
+                                <div class="flex flex-col gap-y-7">
+                                    <!-- Footer Widget Title -->
+                                    <div class="text-xl font-semibold capitalize">Learn</div>
+                                    <!-- Footer Navbar -->
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li>
+                                            <a href="blog.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Masco Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="index-6.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Cold Email Masterclass</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Prospecting Podcast</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Follow-Up Strategy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Email Analyzer</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget Item -->
+
+                                <!-- Footer Widget Item -->
+                                <div class="flex flex-col gap-y-6">
+                                    <!-- Footer Title -->
+                                    <div class="text-xl font-semibold capitalize">
+                                        Utility pages
+                                    </div>
+                                    <!-- Footer Title -->
+
+                                    <!-- Footer Navbar -->
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li>
+                                            <a href="signup.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Signup</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="error-404.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">404 Not found</a>
+                                        </li>
+                                        <li>
+                                            <a href="reset-password.html" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Password Reset</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget Item-->
+
+                                <!-- Footer Widget Item -->
+                                <div class="flex flex-col gap-y-6">
+                                    <!-- Footer Title -->
+                                    <div class="text-xl font-semibold capitalize">
+                                        Resources
+                                    </div>
+                                    <!-- Footer Title -->
+
+                                    <!-- Footer Navbar -->
+                                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Privacy policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Terms & Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Strategic finance</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.example.com/" target="_blank" rel="noopener noreferrer" class="hover:opcity-100 text-[#FDFBF9]/80 underline-offset-4 transition-all duration-300 ease-linear hover:underline">Video guide</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Widget Item -->
+                            </div>
+                            <!-- Footer Widget List -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Footer Center Spacing -->
+                </div>
+                <!-- Footer Area Center -->
+
+                <div class="horizontal-line bg-white"></div>
+
+                <!-- Footer Area Bottom -->
+                <div>
+                    <!-- Footer Bottom Spacing -->
+                    <div class="py-[18px]">
+                        <!-- Section Container -->
+                        <div class="container-default">
+                            <div class="flex flex-col items-center gap-5 lg:flex-row lg:items-start lg:justify-between">
+                                <a href="index.html">
+                                    <img src="assets/img/waflowlight.png" alt="Masco" width="109" height="24" />
+                                </a>
+                                <div class="text-center text-[#FDFBF9]/80">
+                                    &copy; Copyright 2025, All Rights Reserved by Waflow
+                                </div>
+                                <!-- Footer Social Link -->
+                                <div class="flex flex-wrap gap-5">
+                                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white/10 text-sm text-white transition-all duration-300 hover:bg-ColorCorn hover:text-ColorLunarGreen" aria-label="twitter">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white/10 text-sm text-white transition-all duration-300 hover:bg-ColorCorn hover:text-ColorLunarGreen" aria-label="facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white/10 text-sm text-white transition-all duration-300 hover:bg-ColorCorn hover:text-ColorLunarGreen" aria-label="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer" class="flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-white/10 text-sm text-white transition-all duration-300 hover:bg-ColorCorn hover:text-ColorLunarGreen" aria-label="github">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Footer Bottom Spacing -->
+                </div>
+                <!-- Footer Area Bottom -->
+            </div>
+        </footer>
+        <!--...::: Footer Section End :::... -->
+    </div>
+
+    <!--Vendor js-->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
